@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#header {
+    height: 50px;
+    background-color: bisque;
+}
+
+#logo {
+    position: absolute;
+    margin-left: 10%;
+    height: 50px;
+}
+
+#login-tab {
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    margin-left: 85%;
+}
+
+#nav {
+    height: 50px;
+    background-color: pink;
+}
+
+#nav>div {
+    margin-left: 10%;
+}
+
+#nav>div>a {
+    float: left;
+    width: 10%;
+    line-height: 50px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+/* index.html */
+/* index.html - search */
+#mainsearch {
+    height: 500px;
+    background-color: skyblue;
+}
+
+#mainsearch>img {
+    position: absolute;
+    width: 400px;
+    top: 23%;
+    left: 50%;
+    margin-left: -200px;
+}
+
+#searchbox {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    width: 400px;
+    height: 40px;
+    margin-left: -200px;
+    border: 1px solid #1b5ac2;
+    background-color: #fff;
+}
+
+#searchbox>input:first-child {
+    font-size: 16px;
+    width: 325px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+
+#searchbtn {
+    width: 50px;
+    height: 100%;
+    border: 0px;
+    outline: none;
+    float: right;
+    background-color: #1b5ac2;
+    color: #fff;
+}
+
+#searchbox>a {
+    position: absolute;
+    width: 325px;
+    margin-top: 50px;
+    margin-left: -330px;
+    color: red;
+    text-decoration: none;
+}
+
+/* index.html - new */
+#mainnew {
+    height: 450px;
+    background-color: aquamarine;
+
+}
+
+#mainnew>div {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -444px;
+}
+
+.new-imgwrap {
+    width: 220px;
+    float: left;
+}
+
+.new-imgwrap>a>img {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.new-imgtext {
+    text-align: center;
+    line-height: 15px;
+}
+
+/* login.html */
+#login-section {
+    background-color: cornflowerblue;
+    height: 600px;
+}
+
+#login-section>div {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -402px;
+}
+
+#login-section>div>div {
+    width: 400px;
+    height: 500px;
+    float: left;
+    border: 1px solid lightsteelblue;
+}
+
+#login-section>div>div:first-child {
+    border-radius: 8px 0 0 8px;
+    background-color: lightsteelblue;
+    text-align: center;
+}
+
+#login-section>div>div:last-child {
+    border-radius: 0 8px 8px 0;
+    background-color: aliceblue;
+}
+
+#login-title {
+    margin-top: 120px;
+    margin-bottom: 220px;
+}
+
+#go-signup {
+    text-decoration: none;
+}
+
+#logFrm>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#logFrm>ul>li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#logFrm {
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#logFrm>ul>li:first-child {
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+#userid {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#logFrm>ul>li:nth-child(3) {
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+#userpwd {
+    width: 300px;
+    height: 30px;
+}
+
+#loginbtn {
+    margin-top: 100px;
+    width: 300px;
+    height: 35px;
+    background-color: #1b5ac2;
+    color: #fff;
+}
+
+#logFrm>ul>li>input {
+    border: 1px solid #1b5ac2;
+    border-radius: 3px;
+}
