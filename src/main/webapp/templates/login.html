@@ -10,10 +10,10 @@
 </head>
 <body>
     <!-- header -->
-    <div id="header">
+    <header id="header">
         <a href="index.html"><img id="logo" src="../static/img/cute.png" /></a>
         <a id="login-tab" href="login.html">로그인</a>
-    </div>
+    </header>
 
     <!-- section_login -->
     <div id="login-section">
@@ -21,21 +21,20 @@
             <div>
                 <div id="login-title"><h1>로그인</h1></div>
                 <div>
-                    처음이십니까? <b><a id="go-signup" href="#">회원 가입</a></b>
+                    처음이십니까? <b><a id="go-register" href="register.html">회원 가입</a></b>
                 </div>
             </div>
             <div>
                 <form method="post" action="login.jsp" id="logFrm">
                     <ul>
                         <li>아이디</li>
-                        <li><input type="text" name="userid" id="userid" placeholder="아이디"/></li>
+                        <li><input type="text" name="logUserid" id="logUserid" placeholder="아이디"/></li>
                         <li>비밀번호</li>
-                        <li><input type="password" name="userpwd" id="userpwd" placeholder="비밀번호"/></li>
-                        <li><input type="button" id="loginbtn" value="로그인" onclick="logFormCheck()"/></li>
+                        <li><input type="password" name="logUserpwd" id="logUserpwd" placeholder="비밀번호"/></li>
+                        <li><input type="button" id="loginbtn" value="로그인" onclick="logFrmCheck()"/></li>
                 </form>
             </div>
         </div>
     </div>
-    
 </body>
 </html>

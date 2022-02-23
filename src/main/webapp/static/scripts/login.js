@@ -1,6 +1,6 @@
-function logFormCheck() {
-    var id = document.getElementById("userid");
-    var pwd = document.getElementById("userpwd");
+function logFrmCheck() {
+    var id = document.getElementById("logUserid");
+    var pwd = document.getElementById("logUserpwd");
     if (id.value == "") {
         alert("아이디를 입력하세요.");
         id.focus();
@@ -11,5 +11,7 @@ function logFormCheck() {
         pwd.focus();
         return false;
     }
-    document.getElementById("logFrm").submit();
+    // document.getElementById("logFrm").submit();
+
+    return false;
 }

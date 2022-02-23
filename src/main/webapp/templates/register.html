@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uLike : 회원가입</title>
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../static/scripts/register.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <a href="index.html"><img id="logo" src="../static/img/cute.png" /></a>
+        <a id="login-tab" href="login.html">로그인</a>
+    </header>
+    <!-- section_login -->
+    <div id="register-section">
+        <div>
+            <div>
+                <div id="register-title"><h1>환영합니다</h1></div>
+                <div>
+                    이미 계정이 있으십니까? <b><a id="go-login" href="login.html">로그인</a></b>
+                </div>
+            </div>
+            <div>
+                <form method="post" action="register.jsp" id="regFrm">
+                    <ul>
+                        <li>아이디</li>
+                        <li><input type="text" name="regUserid" id="regUserid" placeholder="아이디" /></li>
+                        <div>
+                            <li>비밀번호</li>
+                            <li><input type="password" name="regUserpwd1" id="regUserpwd1" placeholder="비밀번호"/></li>
+                        </div>
+                        <div>
+                            <li style="margin-left: 10px;">비밀번호 재확인</li>
+                            <li><input type="password" name="regUserpwd2" id="regUserpwd2" placeholder="비밀번호 재확인"/></li>
+                        </div>
+                        <li>이름</li>
+                        <li><input type="text" name="regUsername" id="regUsername" placeholder="이름"/></li>
+                        
+                        <li>생년월일</li>
+                        <li><input type="text" name="regBirthYear" id="regBirthYear" placeholder="년(4자)"/></li>
+                        <li><select name="regBirthMonth" id="regBirthMonth">
+                            <option value="none">--월--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select></li>
+                        <li><input type="text" name="regBirthDate" id="regBirthDate" placeholder="일"/></li>
+                        
+                        <div>
+                            <li>성별</li>
+                            <li><select name="regGender" id="regGender">
+                                <option value="none">--성별--</option>
+                                <option value="male">남자</option>
+                                <option value="female">여자</option>
+                                <option value="other">선택안함</option>
+                            </select></li>
+                        </div>
+                        <div>
+                            <li>MBTI</li>
+                            <li><select name="regMBTI" id="regMBTI">
+                                <option value="none">--MBTI--</option>
+                                <option value="ISTJ">ISTJ</option>
+                                <option value="ISFJ">ISFJ</option>
+                                <option value="INFJ">INFJ</option>
+                                <option value="INTJ">INTJ</option>
+                                <option value="ISTP">ISTP</option>
+                                <option value="ISFP">ISFP</option>
+                                <option value="INFP">INFP</option>
+                                <option value="INTP">INTP</option>
+                                <option value="ESTP">ESTP</option>
+                                <option value="ESFP">ESFP</option>
+                                <option value="ENFP">ENFP</option>
+                                <option value="ENTP">ENTP</option>
+                                <option value="ESTJ">ESTJ</option>
+                                <option value="ESFJ">ESFJ</option>
+                                <option value="ENFJ">ENFJ</option>
+                                <option value="ENTJ">ENTJ</option>
+                            </select></li>
+                        </div>
+                        <li><a id="go-mbticheck" href="#">MBTI 확인하러 가기</a></li>
+                        <li><input type="submit" id="registerbtn" value="가입하기"/></li>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

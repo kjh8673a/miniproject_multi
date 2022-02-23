@@ -123,46 +123,54 @@ body {
     line-height: 15px;
 }
 
-/* login.html */
-#login-section {
+/* login.html / register.html */
+#login-section,
+#register-section {
     background-color: cornflowerblue;
     height: 600px;
 }
 
-#login-section>div {
+#login-section>div,
+#register-section>div {
     position: absolute;
     top: 10%;
     left: 50%;
     margin-left: -402px;
 }
 
-#login-section>div>div {
+#login-section>div>div,
+#register-section>div>div {
     width: 400px;
     height: 500px;
     float: left;
     border: 1px solid lightsteelblue;
 }
 
-#login-section>div>div:first-child {
+#login-section>div>div:first-child,
+#register-section>div>div:first-child {
     border-radius: 8px 0 0 8px;
     background-color: lightsteelblue;
     text-align: center;
 }
 
-#login-section>div>div:last-child {
+#login-section>div>div:last-child,
+#register-section>div>div:last-child {
     border-radius: 0 8px 8px 0;
     background-color: aliceblue;
 }
 
-#login-title {
+#login-title,
+#register-title {
     margin-top: 120px;
     margin-bottom: 220px;
 }
 
-#go-signup {
+#go-register,
+#go-login {
     text-decoration: none;
 }
 
+/* login.html */
 #logFrm>ul {
     margin: 0;
     padding: 0;
@@ -187,7 +195,7 @@ body {
     margin-left: 25px;
 }
 
-#userid {
+#logUserid {
     width: 300px;
     height: 30px;
     margin-bottom: 15px;
@@ -199,7 +207,7 @@ body {
     margin-left: 25px;
 }
 
-#userpwd {
+#logUserpwd {
     width: 300px;
     height: 30px;
 }
@@ -213,6 +221,129 @@ body {
 }
 
 #logFrm>ul>li>input {
+    border: 1px solid #1b5ac2;
+    border-radius: 3px;
+}
+
+/* register.html */
+#regFrm>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#regFrm>ul>li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#regFrm>ul>li>div>li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#regFrm {
+    width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#regFrm>ul>li:nth-child(2n+1) {
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+#regUserid,
+#regUsername {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#regUserpwd1 {
+    width: 140px;
+    height: 30px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+#regUserpwd2 {
+    width: 140px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: -15px;
+}
+
+#regBirthYear,
+#regBirthMonth,
+#regBirthDate {
+    float: left;
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+#regBirthYear {
+    height: 30px;
+    margin-left: 20px;
+}
+#regBirthMonth {
+    height: 34px;
+    margin-left: 12.5px;
+}
+#regBirthDate {
+    height: 30px;
+    margin-left: 12.5px;
+}
+
+#regFrm>ul>div {
+    padding: 0;
+    margin: 0;
+    float:left;
+    width: 50%;
+}
+
+#regFrm>ul>div>li:first-child {
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+#regGender {
+    width: 140px;
+    height: 30px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#regMBTI {
+    width: 140px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+#go-mbticheck {
+    float: right;
+    color:red;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+#registerbtn {
+    margin-top: 40px;
+    width: 300px;
+    height: 35px;
+    background-color: #1b5ac2;
+    color: #fff;
+}
+
+#regFrm>ul>li>input,
+#regFrm>ul>li>select,
+#regFrm>ul>div>li>input,
+#regFrm>ul>div>li>select {
     border: 1px solid #1b5ac2;
     border-radius: 3px;
 }
