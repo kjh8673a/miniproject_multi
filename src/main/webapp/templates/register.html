@@ -27,8 +27,10 @@
             <div>
                 <form method="post" action="register.jsp" id="regFrm">
                     <ul>
-                        <li>아이디</li>
+                        <li id="regIDtext">아이디</li>
                         <li><input type="text" name="regUserid" id="regUserid" placeholder="아이디" /></li>
+                        <li><span class="regError"></span></li>
+                        
                         <div>
                             <li>비밀번호</li>
                             <li><input type="password" name="regUserpwd1" id="regUserpwd1" placeholder="비밀번호"/></li>
@@ -37,10 +39,13 @@
                             <li style="margin-left: 10px;">비밀번호 재확인</li>
                             <li><input type="password" name="regUserpwd2" id="regUserpwd2" placeholder="비밀번호 재확인"/></li>
                         </div>
-                        <li>이름</li>
-                        <li><input type="text" name="regUsername" id="regUsername" placeholder="이름"/></li>
+                        <li><span class="regError"></span></li>
                         
-                        <li>생년월일</li>
+                        <li id="regNametext">이름</li>
+                        <li><input type="text" name="regUsername" id="regUsername" placeholder="이름"/></li>
+                        <li><span class="regError"></span></li>
+                        
+                        <li id="regBirthtext">생년월일</li>
                         <li><input type="text" name="regBirthYear" id="regBirthYear" placeholder="년(4자)"/></li>
                         <li><select name="regBirthMonth" id="regBirthMonth">
                             <option value="none">--월--</option>
@@ -58,6 +63,7 @@
                             <option value="12">12</option>
                         </select></li>
                         <li><input type="text" name="regBirthDate" id="regBirthDate" placeholder="일"/></li>
+                        <li><span class="regError"></span></li>
                         
                         <div>
                             <li>성별</li>
@@ -90,6 +96,7 @@
                                 <option value="ENTJ">ENTJ</option>
                             </select></li>
                         </div>
+                        <li><span class="regError"></span></li>
                         <li><a id="go-mbticheck" href="#">MBTI 확인하러 가기</a></li>
                         <li><input type="submit" id="registerbtn" value="가입하기"/></li>
                 </form>

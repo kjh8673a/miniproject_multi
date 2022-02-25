@@ -15,6 +15,14 @@ body {
     height: 50px;
 }
 
+#pagetitle {
+    position: absolute;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    margin-left: 20%;
+}
+
 #login-tab {
     line-height: 50px;
     text-decoration: none;
@@ -38,6 +46,35 @@ body {
     text-align: left;
     text-decoration: none;
     color: black;
+}
+
+#navsearchbox {
+    position: absolute;
+    top: 6.3%;
+    right: 10%;
+    width: 300px;
+    height: 34px;
+    border: 1px solid #1b5ac2;
+    background-color: #fff;
+}
+
+#navsearchbox>input:first-child {
+    font-size: 12px;
+    width: 230px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+
+#navsearchbtn {
+    width: 50px;
+    height: 100%;
+    border: 0px;
+    outline: none;
+    float: right;
+    background-color: #1b5ac2;
+    color: #fff;
 }
 
 /* index.html */
@@ -170,6 +207,7 @@ body {
 
 .new-imgwrap>a>img {
     width: 95%;
+    height: 270px;
     margin-left: 7%;
 }
 
@@ -288,7 +326,6 @@ body {
 }
 
 #regFrm>ul>li {
-    margin: 0;
     padding: 0;
     list-style-type: none;
 }
@@ -305,7 +342,10 @@ body {
     text-align: center;
 }
 
-#regFrm>ul>li:nth-child(2n+1) {
+
+#regIDtext, 
+#regNametext,
+#regBirthtext {
     margin-bottom: 5px;
     text-align: left;
     margin-left: 25px;
@@ -401,4 +441,92 @@ body {
 #regFrm>ul>div>li>select {
     border: 1px solid #1b5ac2;
     border-radius: 3px;
+}
+
+.regError {
+    width: 100%;
+    margin: -10px 0 10px 25px;
+    color: red;
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    display: none;
+}
+
+/* moviemain.html */
+/* slide */
+#slidebox {
+    height: 450px;
+    overflow: hidden;
+}
+
+.container {
+    margin:0; padding: 0;
+    width: 400vw;
+    height: 450px;
+    list-style-type: none;
+    transition: transform 0.5s;
+}
+.inner {
+    margin:0; padding: 0;
+    width: 100vw;
+    background-color: #800;
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+.inner:nth-child(1) {
+    background-image: url(../img/movie_sample01.jpg);
+    background-size: 100vw;
+}
+.inner:nth-child(2) {
+    background-image: url(../img/movie_sample02.jpg);
+    background-size: 100vw;
+}
+.inner:nth-child(3) {
+    background-image: url(../img/movie_sample03.jpg);
+    background-size: 100vw;
+}
+.inner:nth-child(4) {
+    background-image: url(../img/movie_sample04.jpg);
+    background-size: 100vw;
+}
+.inner>a>img {
+    height: 440px;
+    border: 5px solid white;
+}
+
+.prev {
+    position: absolute;
+    top: 33%;
+    left: 7%;
+}
+.next {
+    position: absolute;
+    top: 33%;
+    right: 7%;
+}
+.btn1 {
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    margin-left: -185px;
+}
+.btn2 {
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    margin-left: -70px;
+}
+.btn3 {
+    position:absolute;
+    top: 55%;
+    right: 50%;
+    margin-right: -70px;
+}
+.btn4 {
+    position:absolute;
+    top: 55%;
+    right: 50%;
+    margin-right: -185px;
 }

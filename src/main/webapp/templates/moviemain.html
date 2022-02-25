@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uLike : 영화</title>
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+    <script src="../static/scripts/moviemain.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <a href="index.html"><img id="logo" src="../static/img/cute.png" /></a>
+        <a id="pagetitle" href="moviemain.html">영화</a>
+        <a id="login-tab" href="login.html">로그인</a>
+    </header>
+
+    <!-- bar -->
+    <nav id="nav">
+        <div>
+            <a href="moviemain.html">영화</a>
+            <a href="#">책</a>
+            <a href="#">게임</a>
+            <div id="navsearchbox">
+                <input type="text" placeholder="검색어 입력"/>
+                <input type="button" id="navsearchbtn" value="검색"/>
+            </div>
+        </div>
+    </nav>
+
+    <!-- movie slide -->
+    <div id="slidebox">
+        <ul class="container">
+            <li class="inner showing"><a href="#"><img src="../static/img/movie_sample01.jpg"></a></li>
+            <li class="inner"><a href="#"><img src="../static/img/movie_sample02.jpg"></a></li>
+            <li class="inner"><a href="#"><img src="../static/img/movie_sample03.jpg"></a></li>
+            <li class="inner"><a href="#"><img src="../static/img/movie_sample04.jpg"></a></li>
+        </ul>
+    </div>
+    <button class="prev"><</button>
+    <button class="next">></button>
+    <button class="btn1">1</button>
+    <button class="btn2">2</button>
+    <button class="btn3">3</button>
+    <button class="btn4">4</button>
+
+
+</body>
+
+</html>
